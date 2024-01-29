@@ -6,13 +6,9 @@
 	<link href="./src/output.css" rel="stylesheet">
 	<link rel="stylesheet" href="./wasm/highlight/styles/atom-one-dark.css" / >
     <script src="./wasm/highlight/highlight.js"></script>
-    <script>
-        // JavaScript function to navigate to a new page
-        function navigateToNewPage() {
-            // Change the window location to the desired page
-            window.location.href = "index.html"; // Replace with your actual page URL
-        }
-    </script>
+	<script src="js/navigatePages.js"></script>
+
+
   </head>
 
 	<body class = "bg-neutral-800 justify-center flex ">
@@ -21,15 +17,15 @@
 				<div class = "p-2">
 				</div>
 				<nav class = "align-middle py-400  ">
-					<button onclick="navigateToNewPage()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">Home</button>
-					<button onclick="alert('Button clicked!')" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">ABOUT</button>
+					<button onclick="navigateToIndex()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">Home</button>
+					<button onclick="navigateToAbout()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">About</button>
 				</nav>
 				<div class = "p-2 ">
 				</div>
-				<div class = "p-2 bg-slate-500 text-white font-bold caret-transparent w-[800px]">
+				<div class = "p-2 bg-neutral-800 text-white font-bold caret-transparent w-[800px]">
 					BEVY
 				</div>
-				<div class = "  p-2 bg-red-400  grid grid-cols-3 gap-3 w-[800px] ">
+				<div class = "  p-2 bg-neutral-800  grid grid-cols-3 gap-3 w-[800px] ">
 					    <!-- Image thumbnail linked to another page -->
 
 					<div  class="relative group ">
@@ -83,10 +79,57 @@
 				<div class = "p-2">
 				</div>
 
-				<div class = "p-2 bg-slate-500 text-white font-bold">
+				<div class = "p-2 bg-neutral-800 text-white font-bold">
 					VEX
 				</div>
+				<div class = "  p-2 bg-neutral-800  grid grid-cols-3 gap-3 w-[800px] ">
+					<!-- Image thumbnail linked to another page -->
 
+				<div  class="relative group ">
+					<a  href="./other_pages/moveCube.html" class="flex items-center justify-center bg-neutral-700 p-0">
+						<img src="./thumbnails/moveCube.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
+
+						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
+							<p   class="text-white text-lg font-bold">Move Cube</p>
+						</div>
+					</a>
+
+				</div>
+
+
+				<div  class="relative group ">
+					<a  href="./other_pages/moveCube.html" class="flex items-center justify-center bg-neutral-700 p-0">
+						<img src="./thumbnails/moveCube.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
+
+						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
+							<p   class="text-white text-lg font-bold">Move Cube</p>
+						</div>
+					</a>
+				</div>
+
+				
+				<div  class="relative group ">
+					<a  href="./other_pages/moveCube.html" class="flex items-center justify-center bg-neutral-700 p-0">
+						<img src="./thumbnails/moveCube.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
+
+						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
+							<p   class="text-white text-lg font-bold">Move Cube</p>
+						</div>
+					</a>
+				</div>
+
+				
+				<div  class="relative group ">
+					<a  href="./other_pages/moveCube.html" class="flex items-center justify-center bg-neutral-700 p-0">
+						<img src="./thumbnails/moveCube.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
+
+						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
+							<p   class="text-white text-lg font-bold">Move Cube</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
 
 
 

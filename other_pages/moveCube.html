@@ -6,27 +6,21 @@
 	<link href="../src/output.css" rel="stylesheet">
 	<link rel="stylesheet" href="../wasm/highlight/styles/atom-one-dark.css" / >
     <script src="../wasm/highlight/highlight.js"></script>
-    <script>
-        // JavaScript function to navigate to a new page
-        function navigateToNewPage() {
-            // Change the window location to the desired page
-            window.location.href = "../index.html"; // Replace with your actual page URL
-        }
-    </script>
+	<script src="../js/navigatePages.js"></script>
   </head>
 
-	<body class = "bg-neutral-900 justify-center flex">
+	<body class = "bg-neutral-800 justify-center flex">
 
 			<div class = " text-center ">
 				<div class = "p-2">
 				</div>
 				<nav class = "align-middle py-400  ">
-					<button onclick="navigateToNewPage()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">Home</button>
-					<button onclick="alert('Button clicked!')" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">ABOUT</button>
+					<button onclick="navigateToIndex()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">Home</button>
+					<button onclick="navigateToAbout()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">About</button>
 				</nav>
 				<div class = "p-2">
 				</div>
-				<div class = "p-2 text-left bg-slate-500 rounded-md">
+				<div class = "p-2 text-center bg-neutral-800 text-white font-bold">
 					Move Cube
 				</div>
 				<div class = "p-2">
@@ -287,7 +281,7 @@ fn intersections(
 			}
 		}
 	}
-}ZERO
+}
 
 							</code></pre>
 
