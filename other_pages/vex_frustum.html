@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<link href="../src/output.css" rel="stylesheet">
+	<link rel="stylesheet" href="../wasm/highlight/styles/atom-one-dark.css" / >
+    <script src="../wasm/highlight/highlight.js"></script>
+	<script src="../js/navigatePages.js"></script>
+  </head>
+
+	<body class = "bg-neutral-800 justify-center flex">
+
+			<div class = " text-center ">
+				<div class = "p-2">
+				</div>
+				<nav class = "align-middle py-400 w-[800px]  ">
+					<button onclick="navigateToIndex()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">Home</button>
+					<button onclick="navigateToAbout()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">About</button>
+				</nav>
+				<div class = "p-2">
+				</div>
+				<div class = "p-2 text-center bg-neutral-800 text-white font-bold">
+					Draw Frustum Lops
+				</div>
+				<div class = "p-2">
+				</div>
+
+					<!--<canvas class="bevy-instance__canvas" id="bevy" width="1119" height="633" tabindex="0" data-raw-handle="1" alt="App" cursor="auto" style="width: 500.01px; height: 660.995px; aspect-ratio: 1.77826 / 1;"></canvas>
+					-->	
+
+						<div class ="text-xs  rounded-md text-left">
+							<pre name="source" id="source1" ><code id="source" class="csharp">
+int overrideClippingPlane = chi("override_clipping_planes");
+vector clipping_planes = chv("clipping_planes");
+
+
+//float horizontalAperture = usd_attrib(0,@primpath, "horizontalAperture");
+float horizontalAperture = 0.305816;
+float verticalAperture = usd_attrib(0, @primpath, "verticalAperture");
+float focalLength = usd_attrib(0, @primpath, "focalLength");
+vector2 clipping= usd_attrib(0, @primpath, "clippingRange");
+
+if (overrideClippingPlane) { 
+    vector clipping2 = chv("clipping_planes");
+    clipping.x = clipping2.x;
+    clipping.y = clipping2.y;
+    //vector2 clipping= usd_attrib(0, @primpath, "clippingRange");
+};
+
+float x = ((horizontalAperture/focalLength*clipping.x)/2);
+float y = (((verticalAperture*clipping.x)/focalLength)/2);
+
+vector p0 = set(-x,y,-clipping.x+1);//top right
+vector p1 = set(x,y,-clipping.x+1);//top left
+vector p2 = set(-x,-y,-clipping.x+1);//bottom right
+vector p3 = set(x,-y,-clipping.x+1);//bottom left
+
+float x_far = ((horizontalAperture/focalLength*clipping.y)/2);
+float y_far = (((verticalAperture/1*clipping.y)/focalLength)/2);
+
+//set far position
+vector p4 = set(x_far,y_far,-clipping.y);
+vector p5 = set(-x_far,y_far,-clipping.y);
+vector p6 = set(x_far,-y_far,-clipping.y);
+vector p7 = set(-x_far,-y_far,-clipping.y);
+
+
+vector points[] = array(
+p0,
+p1,
+p2,
+p3,
+p4,
+p5,
+p6,
+p7);
+
+
+string prim_location = concat(@primpath,"/frustum");
+usd_addprim(0, prim_location, "Mesh");
+usd_setattrib(0, prim_location, "points", points);
+
+int faceVertexCounts[] ={ 
+4,
+4,
+4,
+4,
+4,
+4,
+};
+
+int faceVertexIndicies[] ={
+0,
+1,
+3,
+2,
+4,
+5,
+7,
+6,
+6,
+7,
+2,
+3,
+5,
+4,
+1,
+0,
+5,
+0,
+2,
+7,
+1,
+4,
+6,
+3};
+
+usd_setattrib(0, prim_location, "faceVertexCounts", faceVertexCounts);
+usd_setattrib(0, prim_location, "faceVertexIndices", faceVertexIndicies);
+usd_setattrib(0, prim_location, "purpose", "guide");
+
+vector displayColor[] = array({0,1,0});
+usd_setattrib(0, prim_location, "primvars:displayColor",displayColor );
+
+							</code></pre>
+
+
+						<script lang="javascript">
+							var source1 = document.getElementById('source1')
+							hljs.highlightElement(source1);
+						</script>
+						</div>
+						<div class = "p-2">
+						</div>
+
+					</div>
+			</div>	
+	</body>
+  <script type="module">
+  	import init from '../wasm/target/hello_bevy.js';
+	init()
+  </script>
+
+</html>
