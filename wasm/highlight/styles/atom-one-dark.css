@@ -1,9 +1,12 @@
 pre code.hljs {
   display: block;
   overflow-x: auto;
-  padding: 1em
+  padding: 1em;
+  
+
 }
 code.hljs {
+
   padding: 3px 5px
 }
 /*
@@ -27,7 +30,8 @@ hue-6-2: #e6c07b
 */
 .hljs {
   color: #abb2bf;
-  background: #282c34
+  background: #282c34;
+  border-radius: 10px;
 }
 .hljs-comment,
 .hljs-quote {
