@@ -1,78 +1,163 @@
-
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <meta charset="UTF-8" />
-	<link href="./src/output.css" rel="stylesheet">
-	<link rel="stylesheet" href="./wasm/highlight/styles/atom-one-dark.css" / >
-    <script src="./wasm/highlight/highlight.js"></script>
-	<script src="js/navigatePages.js"></script>
-  </head>
+	<head>
+		<title>crussellcodes by Chris Russell</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-	<body class = "bg-neutral-800 justify-center flex ">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-			<div class = " text-center ">
-				<div class = "p-2">
-				</div>
-				<nav class = "align-middle py-400  ">
-					<button onclick="navigateToIndex()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">Home</button>
-					<button onclick="navigateToAbout()" class= "justify-center bg-neutral-700 text-white px-4 py-2 rounded hover:bg-neutral-800 focus:outline-none focus:ring focus:border-blue-300">About</button>
-				</nav>
-				<div class = "p-2 ">
-				</div>
-				<div class = "p-2 bg-neutral-800 text-white font-bold caret-transparent w-[800px]">
-					BEVY
-				</div>
-				<div class = "  p-2 bg-neutral-800  grid grid-cols-3 gap-3 w-[800px] ">
-					    <!-- Image thumbnail linked to another page -->
-					<div  class="relative group ">
-						<a  href="./other_pages/moveCube.html" class="flex items-center justify-center bg-neutral-700 p-0 caret-transparent">
-							<img src="./thumbnails/moveCube.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>crussellcodes</strong> <span>by Chris Russell</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-							<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
-								<p   class="text-white text-lg font-bold">Move Cube</p>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Filmography</a></li>
+							<li><a href="worldInspector.html">World Inspector</a></li>
+							<li><a href="animation.html">Animation</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>A visual effects portfolio</h1>
+							</header>
+							<div class="content">
+								<p>we do these things not because they are easy, but because we thought they were going to be easy</p>
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul>
 							</div>
-						</a>
-					</div>
-					<div  class="relative group ">
-						<a  href="./other_pages/animation.html" class="flex items-center justify-center bg-neutral-700 p-0 caret-transparent">
-							<img src="./thumbnails/animation.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
-
-							<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
-								<p   class="text-white text-lg font-bold">Animation</p>
-							</div>
-						</a>
-					</div>
-					<div  class="relative group ">
-						<a  href="./other_pages/worldInspector.html" class=" flex items-center justify-center bg-neutral-700 p-0 caret-transparent">
-							<img src="./thumbnails/worldInspector02.jpg" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
-
-							<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
-								<p   class="text-white text-lg font-bold">World Inspector</p>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<div class = "p-2">
-				</div>
-				<div class = "p-2 bg-neutral-800 text-white font-bold">
-					VEX
-				</div>
-				<div class = "  p-2 bg-neutral-800  grid grid-cols-3 gap-3 w-[800px] ">
-					<!-- Image thumbnail linked to another page -->
-
-				<div  class="relative group ">
-					<a  href="./other_pages/vex_frustum.html" class="flex items-center justify-center bg-neutral-700 p-0  caret-transparent">
-						<img src="./thumbnails/vex_frustum.JPG" alt="Image 2" class="w-full h-auto group-hover:opacity-50">
-
-						<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
-							<p   class="text-white text-lg font-bold">Draw Frustum Lops</p>
 						</div>
-					</a>
-				</div>
-			</div>
-			</div>
-	</body>
+					</section>
 
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/movieposters/2025_predatorbadlands.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Predator Badlands</a></h3>
+										<p>Lead lighting technical director</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/movieposters/2024_houseofthedragon.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">House of the Dragon</a></h3>
+										<p>CG Supervisor</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/movieposters/2024_masterofair.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Masters of the Air</a></h3>
+										<p>CG Supervisor</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/movieposters/2022_avatar2.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Avatar: The Way of Water</a></h3>
+										<p>Lead lighting technical director</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/movieposters/2021_justiceleague.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Consequat</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Etiam</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Etiam</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Etiam</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Massa libero</h2>
+									</header>
+									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<ul class="actions">
+										<li><a href="landing.html" class="button next">Get Started</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
