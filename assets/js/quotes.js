@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {text: "Storytelling has to serve a purpose. It’s not entertainment for the sake of entertainment.", author: "David Simon"},
     {text: "The key to storytelling is authenticity. There’s nothing more important.", author: "David Simon"},
     {text: "Cinema is a worldwide phenomenon.", author: "Wim Wenders"},
-    {text: "Storytelling is the most powerful way to put ideas into the world today.", author: "Robert Mckee"}
+    {text: "Storytelling is the most powerful way to put ideas into the world today.", author: "Robert Mckee"},
+    {text: "If you just love movies enough, you can make a good one.", author: "Quentin Tarantino"}
   ];
 
   const quoteEl = document.getElementById('quote');
