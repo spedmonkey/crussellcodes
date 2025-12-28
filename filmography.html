@@ -110,7 +110,8 @@
 												through the CG pipeline to final render. The project featured three highly
 												 detailed, photoreal dragons, each with a distinct personality brought to life
 												  through physically based shaders, advanced rigging with muscle systems,
-												   dynamic simulations, high-quality animation, and physically based rendering.
+												   dynamic simulations, lifelike animation, with fx simulations of dust, water and fire all rendered
+												    in a physically based renderer.
 											</p>
 											<ul class="actions">
 												<li><a href="https://www.imdb.com/title/tt11198330" class="button">Learn more</a></li>
@@ -125,9 +126,29 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Rhoncus magna</h3>
+												<h3>Carry-On</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+											<p>
+											Sorting Room — Lighting & Layout Approach
+											</p>
+											<p>
+											My role on this project was as a lead lighting technical director. The Sorting Room environment was constructed using a modular layout with extensive instancing to maximise efficiency and flexibility. 
+											Once the layout was established, we instanced renderable light fixtures directly beneath each light housing.
+											</p>
+											<p>
+											This lighting setup used an emissive bulb inside the housing to provide visible diffusion without contributing illumination to the wider environment. 
+											Environmental lighting was instead handled by an area light positioned below the fixture. This approach significantly reduced render time and sampling
+											noise, while also allowing independent control of light visibility without affecting scene illumination.
+											</p>
+											<p>
+											We also conducted tests using 3D volumetric fog to study light scattering behaviour. These results were then used to inform a 2D compositing-based SPF
+											setup.
+											</p>
+											<p>
+											By combining a highly instanced environment with an instanced lighting system, we were able to efficiently build, light, and render a large-scale 
+											environment with minimal render resources. The heavy use of instancing also reduced cache management overhead, contributing to a more streamlined 
+											and scalable pipeline.
+											</p>
 											<ul class="actions">
 												<li><a href="https://www.imdb.com/title/tt21382296" class="button">Learn more</a></li>
 											</ul>
