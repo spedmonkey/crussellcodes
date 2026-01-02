@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { text: "Drama is life with the dull bits cut out.", author: "Alfred Hitchcock" },
     { text: "In film, we sculpt time, we sculpt behaviour and we sculpt light.", author: "David Fincher" },
     { text: "I'm a typed director. If I made Cinderella, the audience would immediately be looking for a body in the coach.", author: "Alfred Hitchcock" },
-    { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
     {text: "There are no rules in filmmaking. Only sins. And the cardinal sin is dullness.", author: "David Fincher"},
     {text: "Storytelling has to serve a purpose. It’s not entertainment for the sake of entertainment.", author: "David Simon"},
     {text: "The key to storytelling is authenticity. There’s nothing more important.", author: "David Simon"},
